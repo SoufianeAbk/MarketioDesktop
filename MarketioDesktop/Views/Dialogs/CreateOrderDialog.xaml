@@ -1,4 +1,4 @@
-﻿<Window x:Class="Marketio_WPF.Views.Dialogs.CreateOrderDialog"
+﻿<Window x:Class="MarketioDesktop.Views.Dialogs.CreateOrderDialog"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Nieuwe order aanmaken"

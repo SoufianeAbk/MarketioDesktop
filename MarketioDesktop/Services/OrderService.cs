@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Services
+namespace MarketioDesktop.Services
 {
     internal class OrderService
     {

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Marketio_Shared.Enums
+﻿namespace Marketio_Shared.Enums
 {
-    internal class ProductCategory
+    public enum ProductCategory
     {
+        Electronics = 1,
+        Clothing = 2,
+        Books = 3,
+        HomeAndGarden = 4,
+        Sports = 5
     }
 }

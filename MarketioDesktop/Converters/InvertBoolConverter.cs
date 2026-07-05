@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using System.Windows.Data;
 
-namespace Marketio_WPF.Converters
+namespace MarketioDesktop.Converters
 {
     /// <summary>
     /// Inverteert een boolean waarde.

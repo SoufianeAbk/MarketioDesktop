@@ -1,11 +1,11 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using Marketio_Shared.DTOs;
 using Marketio_Shared.Enums;
-using Marketio_WPF.Services;
+using MarketioDesktop.Services;
 using System.Collections.ObjectModel;
 using System.Windows;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     internal class ProductsViewModel : BaseViewModel
     {

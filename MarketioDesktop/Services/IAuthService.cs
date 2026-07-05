@@ -1,6 +1,6 @@
 ﻿using Marketio_Shared.Models;
 
-namespace Marketio_WPF.Services.Interfaces
+namespace MarketioDesktop.Services.Interfaces
 {
     /// <summary>
     /// Interface voor authenticatiediensten in WPF-toepassing

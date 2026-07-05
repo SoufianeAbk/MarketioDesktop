@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Marketio_Shared.Models;
-using Marketio_WPF.Models;
+using MarketioDesktop.Models;
 
-namespace Marketio_WPF.Services
+namespace MarketioDesktop.Services
 {
     internal class UserManagementService
     {

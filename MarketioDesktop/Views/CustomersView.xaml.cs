@@ -1,9 +1,9 @@
-﻿using Marketio_WPF.ViewModels;
-using Marketio_WPF.Views.Dialogs;
+﻿using MarketioDesktop.ViewModels;
+using MarketioDesktop.Views.Dialogs;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views
+namespace MarketioDesktop.Views
 {
     public partial class CustomersView : UserControl
     {
@@ -25,7 +25,7 @@ namespace Marketio_WPF.Views
                     _ = vm.SubmitCreateCustomerAsync(
                         dialog.FirstName, dialog.LastName,
                         dialog.Email, dialog.PhoneNumber,
-                        dialog.Address, dialog.IsActive);
+                        dialog.Address, dialog.IsActiveChecked);
             };
 
             vm.EditCustomerRequested += (_, customer) =>
@@ -36,7 +36,7 @@ namespace Marketio_WPF.Views
                         (string)customer.Id,
                         dialog.FirstName, dialog.LastName,
                         dialog.Email, dialog.PhoneNumber,
-                        dialog.Address, dialog.IsActive);
+                        dialog.Address, dialog.IsActiveChecked);
             };
         }
     }

@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using Marketio_WPF.Services;
-using Marketio_WPF.Services.Interfaces;
+using MarketioDesktop.Services;
+using MarketioDesktop.Services.Interfaces;
 using System.Net.Http;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     /// <summary>
     /// ViewModel voor user registration.

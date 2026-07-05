@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Marketio_Shared.Enums
+﻿namespace Marketio_Shared.Enums
 {
-    internal class PaymentMethod
+    public enum PaymentMethod
     {
+        CreditCard = 1,
+        DebitCard = 2,
+        PayPal = 3,
+        BankTransfer = 4,
+        Cash = 5
     }
 }

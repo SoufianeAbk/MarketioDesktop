@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace Marketio_WPF.Converters
+namespace MarketioDesktop.Converters
 {
     /// <summary>
     /// Zet een tekenreekswaarde om naar zichtbaarheid.

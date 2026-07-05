@@ -1,9 +1,9 @@
-﻿using Marketio_WPF.ViewModels;
+﻿using MarketioDesktop.ViewModels;
 using System;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views
+namespace MarketioDesktop.Views
 {
     public partial class RegisterView : UserControl
     {

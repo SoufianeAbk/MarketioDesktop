@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace Marketio_WPF.Controls
+namespace MarketioDesktop.Controls
 {
     public partial class StockIndicator : UserControl
     {

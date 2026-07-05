@@ -3,7 +3,7 @@ using Marketio_Shared.Enums;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views.Dialogs
+namespace MarketioDesktop.Views.Dialogs
 {
     public partial class ProductDialog : Window
     {

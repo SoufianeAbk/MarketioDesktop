@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Marketio_Shared.Entities;
+using Marketio_Shared.Enums;
 
 namespace Marketio_Shared.Interfaces
 {
-    internal class IProductRepository
+    public interface IProductRepository : IRepository<Product>
     {
+        Task<IEnumerable<Product>> GetByCategoryAsync(ProductCategory category);
+        Task<IEnumerable<Product>> GetActiveProductsAsync();
+        Task<bool> UpdateStockAsync(int productId, int quantity);
     }
 }

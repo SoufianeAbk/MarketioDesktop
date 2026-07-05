@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using Marketio_WPF.ViewModels;
+using MarketioDesktop.ViewModels;
 
-namespace Marketio_WPF
+namespace MarketioDesktop
 {
     /// <summary>
     /// Interactie logica voor MainWindow.xaml

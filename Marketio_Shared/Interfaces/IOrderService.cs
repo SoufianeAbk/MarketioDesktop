@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Marketio_Shared.DTOs;
 
 namespace Marketio_Shared.Interfaces
 {
-    internal class IOrderService
+    public interface IOrderService
     {
+        Task<OrderDto?> CreateOrderAsync(CreateOrderDto createOrderDto);
+        Task<OrderDto?> GetOrderByIdAsync(int orderId);
+        Task<IEnumerable<OrderDto>> GetCustomerOrdersAsync(string customerId);
+        Task<bool> CancelOrderAsync(int orderId);
+        Task DeleteOrderAsync(int orderId);
     }
 }

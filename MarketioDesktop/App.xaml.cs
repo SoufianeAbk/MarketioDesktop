@@ -1,9 +1,9 @@
 ﻿using Marketio_Shared.Data;
 using Marketio_Shared.Models;
-using Marketio_WPF.Services;
-using Marketio_WPF.Services.Interfaces;
-using Marketio_WPF.ViewModels;
-using Marketio_WPF.Views;
+using MarketioDesktop.Services;
+using MarketioDesktop.Services.Interfaces;
+using MarketioDesktop.ViewModels;
+using MarketioDesktop.Views;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Windows;
 
-namespace Marketio_WPF
+namespace MarketioDesktop
 {
     public partial class App : Application
     {
@@ -123,16 +123,20 @@ namespace Marketio_WPF
             using var scope = ServiceProvider.CreateScope();
             var loggerFactory = scope.ServiceProvider.GetRequiredService<ILoggerFactory>();
             var logger = loggerFactory.CreateLogger<DataSeeder>();
+            var context = scope.ServiceProvider.GetRequiredService<MarketioDbContext>();
             var seeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
 
             try
             {
+                logger.LogInformation("Applying database migrations...");
+                await context.Database.MigrateAsync();
+
                 await seeder.SeedAsync();
-                logger.LogInformation("Database seeding completed successfully");
+                logger.LogInformation("Database migration and seeding completed successfully");
             }
             catch (Exception ex)
             {
-                logger.LogError(ex, "Error during database seeding");
+                logger.LogError(ex, "Error during database migration/seeding");
                 throw;
             }
         }

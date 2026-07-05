@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views.Dialogs
+namespace MarketioDesktop.Views.Dialogs
 {
     public partial class CreateOrderDialog : Window
     {
@@ -74,8 +74,9 @@ namespace Marketio_WPF.Views.Dialogs
                 var result = new List<(int, int, decimal)>();
                 foreach (var row in Items)
                 {
-                    if (row.SelectedProduct == null || row.Quantity < 1) continue;
-                    int productId = (int)row.SelectedProduct.Id;
+                    var product = row.SelectedProduct;
+                    if (product is null || row.Quantity < 1) continue;
+                    int productId = (int)product.Id;
                     result.Add((productId, row.Quantity, row.UnitPrice));
                 }
                 return result;

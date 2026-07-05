@@ -4,7 +4,7 @@ using Marketio_Shared.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Marketio_WPF.Services
+namespace MarketioDesktop.Services
 {
     internal class ProductService
     {
@@ -108,7 +108,7 @@ namespace Marketio_WPF.Services
 
         public async Task<bool> UpdateProductAsync(int productId, dynamic productData)
         {
-            if (productId <= 0 || productData == null) return false;
+            if (productId <= 0 || productData is null) return false;
 
             try
             {

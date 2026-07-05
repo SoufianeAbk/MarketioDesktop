@@ -1,4 +1,4 @@
-﻿namespace Marketio_WPF.Models
+﻿namespace MarketioDesktop.Models
 {
     /// <summary>
     /// Data Transfer Object voor de Admin-gebruikerslijst.

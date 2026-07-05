@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {

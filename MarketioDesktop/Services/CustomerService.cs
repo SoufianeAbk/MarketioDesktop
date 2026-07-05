@@ -3,7 +3,7 @@ using Marketio_Shared.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
-namespace Marketio_WPF.Services
+namespace MarketioDesktop.Services
 {
     internal class CustomerService
     {

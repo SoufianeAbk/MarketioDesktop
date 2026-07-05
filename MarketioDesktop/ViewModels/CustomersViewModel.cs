@@ -1,9 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using Marketio_WPF.Services;
+using MarketioDesktop.Services;
 using System.Collections.ObjectModel;
 using System.Windows;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     internal class CustomersViewModel : BaseViewModel
     {

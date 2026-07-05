@@ -1,10 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using Marketio_WPF.Services.Interfaces;
-using Marketio_WPF.Services;
+using MarketioDesktop.Services.Interfaces;
+using MarketioDesktop.Services;
 using System.Net.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     /// <summary>
     /// ViewModel voor gebruikersaanmelding.

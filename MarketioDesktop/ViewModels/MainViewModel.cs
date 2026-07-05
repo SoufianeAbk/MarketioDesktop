@@ -1,12 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.Input;
-using Marketio_WPF.Services;
-using Marketio_WPF.Services.Interfaces;
-using Marketio_WPF.Views;
-using MarketioDesktop.ViewModels;
+using MarketioDesktop.Services;
+using MarketioDesktop.Services.Interfaces;
 using MarketioDesktop.Views;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.ViewModels
+namespace MarketioDesktop.ViewModels
 {
     /// <summary>
     /// Main ViewModel voor de applicatie.

@@ -1,7 +1,7 @@
 ﻿using System.Windows.Controls;
-using Marketio_WPF.ViewModels;
+using MarketioDesktop.ViewModels;
 
-namespace Marketio_WPF.Views
+namespace MarketioDesktop.Views
 {
     /// <summary>
     /// Interactie logica voor AdminView.xaml

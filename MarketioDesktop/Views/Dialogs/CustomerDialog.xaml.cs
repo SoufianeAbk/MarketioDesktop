@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views.Dialogs
+namespace MarketioDesktop.Views.Dialogs
 {
     public partial class CustomerDialog : Window
     {
@@ -10,7 +10,7 @@ namespace Marketio_WPF.Views.Dialogs
         public string Email => EmailBox.Text.Trim();
         public string PhoneNumber => PhoneBox.Text.Trim();
         public string Address => AddressBox.Text.Trim();
-        public bool IsActive => IsActiveCheck.IsChecked == true;
+        public bool IsActiveChecked => IsActiveCheck.IsChecked == true;
 
         public CustomerDialog(dynamic? customer = null)
         {

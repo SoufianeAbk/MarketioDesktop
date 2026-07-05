@@ -1,9 +1,9 @@
 ﻿using Marketio_Shared.Models;
-using Marketio_WPF.Services.Interfaces;
+using MarketioDesktop.Services.Interfaces;
 using MarketioDesktop.Services;
 using Microsoft.AspNetCore.Identity;
 
-namespace Marketio_WPF.Services
+namespace MarketioDesktop.Services
 {
     public class AuthService : IAuthService
     {

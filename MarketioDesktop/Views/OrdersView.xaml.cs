@@ -1,10 +1,10 @@
-﻿using Marketio_WPF.ViewModels;
-using Marketio_WPF.Views.Dialogs;
+﻿using MarketioDesktop.ViewModels;
+using MarketioDesktop.Views.Dialogs;
 using Marketio_Shared.Enums;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Marketio_WPF.Views
+namespace MarketioDesktop.Views
 {
     public partial class OrdersView : UserControl
     {
