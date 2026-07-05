@@ -1,6 +1,6 @@
 # Marketio Desktop
 
-WPF-desktopapplicatie voor het beheer van het Marketio-platform: producten, klanten, bestellingen en gebruikers. Dit project is de desktopvariant binnen de bredere Marketio-omgeving (naast een ASP.NET Core-webapplicatie en een .NET MAUI-app)
+WPF-desktopapplicatie voor het beheer van het Marketio-platform: producten, klanten, bestellingen en gebruikers.
 De solution bestaat uit twee projecten: een Model-Library (`Marketio_Shared`) en een WPF-toepassing (`MarketioDesktop`), met een eigen SQL Server-databank (standaard LocalDB).
 
 **Repository:** [github.com/SoufianeAbk/MarketioDesktop](https://github.com/SoufianeAbk/MarketioDesktop)
